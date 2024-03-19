@@ -1,0 +1,9 @@
+function fprintfdemo
+x = [1 2 3 4 5];
+
+y = [20.4 12.6 17.8 88.7 120.4];
+z = [x;y];
+fprintf('x y \n');
+fprintf('%d %.3f\n',z);
+
+end
