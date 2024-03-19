@@ -1,0 +1,22 @@
+clear all;
+clc;
+close all;
+matrix = randi(50, 10, 8);
+meanvalues = mean(matrix, 2);
+medianvalues = median(matrix, 2);
+variancevalues = var(matrix, 0, 2);
+skewnessvalues = skewness(matrix, 0, 2);
+kurtosisvalues = kurtosis(matrix, 0, 2);
+
+disp('Matrix:');
+disp(matrix);
+disp('Mean values:');
+disp(meanvalues);
+disp('Median values:');
+disp(medianvalues);
+disp('Variance values:');
+disp(variancevalues);
+disp('Skewness values:');
+disp(skewnessvalues);
+disp('Kurtosis values:');
+disp(kurtosisvalues);
